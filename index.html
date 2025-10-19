@@ -1,0 +1,75 @@
+
+
+<h1>Sign in (if you don't have an account already)</h1>
+
+<form action="" id="SignInForm" autocomplete = "on">
+  <input type="text" id="Cusername" class="form-control" placeholder="Enter your Username..."><br><br>
+  <input type="password" id="Cpassword" class="form-control" placeholder="Enter your Password..."><br><br>
+  <button type="submit" value="Submit">Submit</button>
+</form>
+
+<h1>Login (if you have an account already)</h1>
+<form action="" id="loginForm" autocomplete = "on">
+  <input type="text" id="username" class="form-control" placeholder="Enter a Username..."><br><br>
+  <input type="password" id="password" class="form-control" placeholder="Enter a Password..."><br><br>
+  <button type="submit" value="Submit">Submit</button>
+</form>
+
+<h1 id = "one">Hello <span id = "user"> </span> Welcome to My Webpage!</h1>
+
+<h3>Note: You don't need an account to use this website.<h3>
+
+<div class = "container">
+  
+<h2 id = "two">Today is <span id="d">DAY</span></h2> 
+  
+
+<h3 id  = "three">The time is <span id="t">TIME</span></h3>
+  
+<h4>(Be aware, the clock is not always right )</h4>
+  
+  <h1>____________________________________________________________________________________________________________</h1>
+  
+  <h1>Chat</h1>  
+
+  <p><span id="outputMessage">nothing here right now :(</span></p>
+  
+<form action="" id="chatForm" autocomplete = "off">
+  <input type="text" id="inputMessage" class="form-control" placeholder="Send a Message..."></input>
+  <button type="submit" value="Submit">Send</button>
+</form>
+  
+  
+<h1>___________________________________________________________________________________</h1>
+  
+  <h1>Emails</h1>
+  
+  </div>
+
+  
+  
+<p>You will need to activate the file in Gmail to receive the message.</p>
+<p>Thanks for clicking on this website.</p>
+
+<form id="contactForm" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" id="recipient" placeholder="Recipient Email">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // prevent default form submission
+
+    // Get recipient email from input field
+    const recipientEmail = document.getElementById("recipient").value;
+
+    // Set the action dynamically
+    form.action = `https://formsubmit.co/${recipientEmail}`;
+
+    form.submit(); // submit the form after setting action
+  });
+</script>
