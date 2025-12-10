@@ -9,7 +9,37 @@ body{
   align-items: center;
 }
 
+.red{
+ background-color: red;
+}
 
+.green{
+  background-color: green;
+}
+
+.white{
+  background-color: white;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.purple{
+  background-color: blueviolet;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.pink{
+  background-color: pink;
+}
 
 
 
