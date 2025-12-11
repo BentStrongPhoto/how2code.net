@@ -1,4 +1,4 @@
-let background = document.querySelector("#background")
+let body = document.querySelector("body")
 
 let redButton = document.querySelector("#red-switch")
 
