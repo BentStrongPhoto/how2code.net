@@ -32,11 +32,13 @@ let loginForm = document.getElementById("loginForm");
 loginForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let username = document.getElementById("username");
-  let password = document.getElementById("password");
+  let newUsername = document.getElementById("username");
+  let newPassword = document.getElementById("password");
+
+  //localStorage.setItem(newUsername: newPassword)
   
   
-  if (username.value == "" || password.value == "") {
+  if (newUsername.value == "" || newPassword.value == "") {
     alert("Ensure you input a value in both fields!");
   } else {
     // perform operation with form input
@@ -53,8 +55,8 @@ loginForm.addEventListener("submit", (e) => {
     
    
 
-    username.value = "";
-    password.value = "";
+    newUsername.value = "";
+    newPassword.value = "";
   }
 });
 
