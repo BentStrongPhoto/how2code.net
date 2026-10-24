@@ -105,5 +105,6 @@ chatForm.addEventListener("submit", (d) => {
   }
 });    
 
+
 console.log(messageInput)
 console.log(messageOutput)
